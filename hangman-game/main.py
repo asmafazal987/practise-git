@@ -82,9 +82,9 @@ if __name__ == "__main__":
                 print(
                     "You have run out of guesses!\nAfter "
                     + str(len(missed_letters))
-                    + " missed guesses and "
+                    + " missed guesses and :"
                     + str(len(correct_letters))
-                    + ' correct guesses, the word was "'
+                    + ' correct guesses, the word was: "'
                     + secret_word
                     + '"'
                 )

@@ -2,7 +2,7 @@ ABC = "abcdefghijklmnopqrstuvwxyz"
 
 HANGMAN = [
     """
-H A N G M A N - Fruit Edition
+H A N G M A N 
 
    +---+
    |   |
@@ -12,7 +12,7 @@ H A N G M A N - Fruit Edition
        |
 =========""",
     """
-H A N G M A N - Fruits Edition
+H A N G M A N 
 
   +---+
   |   |
@@ -22,7 +22,7 @@ H A N G M A N - Fruits Edition
       |
 =========""",
     """
-H A N G M A N - Fruits Edition
+H A N G M A N 
 
   +---+
   |   |
@@ -32,7 +32,7 @@ H A N G M A N - Fruits Edition
       |
 =========""",
     """
-H A N G M A N - Fruits Edition
+H A N G M A N 
 
   +---+
   |   |
@@ -42,7 +42,7 @@ H A N G M A N - Fruits Edition
       |
 =========""",
     """
-H A N G M A N - Fruits Edition
+H A N G M A N 
 
   +---+
   |   |
@@ -52,7 +52,7 @@ H A N G M A N - Fruits Edition
       |
 =========""",
     """
-H A N G M A N - Fruits Edition
+H A N G M A N 
 
   +---+
   |   |
@@ -62,7 +62,7 @@ H A N G M A N - Fruits Edition
       |
 =========""",
     """
-H A N G M A N - Fruits Edition
+H A N G M A N 
 
   +---+
   |   |
@@ -73,23 +73,7 @@ H A N G M A N - Fruits Edition
 =========""",
 ]
 
-WORDS = [
-    "apple",
-    "durian",
-    "banana",
-    "mango",
-    "strawberry",
-    "orange",
-    "grape",
-    "pineapple",
-    "apricot",
-    "lemon",
-    "coconut",
-    "watermelon",
-    "cherry",
-    "papaya",
-    "berry",
-    "peach",
-    "lychee",
-    "muskmelon",
-]
+DIC = {
+    "colors": ["blue", "black", "white", "green", "yellow"],
+    "days": ["sunday","monday","tuesday", "wednesday", "thursday", "friday", "saturday"],
+}

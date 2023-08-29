@@ -1,18 +1,30 @@
 import random
 
-from text import ABC, HANGMAN, WORDS
+from text import ABC, HANGMAN, DIC
+
+import random
+
+from text import ABC, HANGMAN, DIC
 
 
-def get_random_word() -> str:
-    return random.choice(WORDS)
+def get_random():
+    choice = input("Enter your choice: if you want to play hangman-color press 0  or hangman-days game press 1  ")
+    if choice == '0':
+        return random.choice(DIC['colors'])
+    elif choice == '1':
+        return random.choice(DIC['days'])
+    else:
+        print("enter a valid choice")
+    
+    
 
 
-def restart() -> None:
+def restart():
     global missed_letters, correct_letters, game_is_done, secret_word
     missed_letters = ""
     correct_letters = ""
     game_is_done = False
-    secret_word = get_random_word()
+    secret_word = get_random()
 
 
 def display_board(HANGMAN, missed_letters, correct_letters, secret_word) -> None:
@@ -34,7 +46,7 @@ def display_board(HANGMAN, missed_letters, correct_letters, secret_word) -> None
     print("\n")
 
 
-def get_guess(already_guessed) -> str:
+def get_guess(already_guessed):
     while True:
         guess = input("Guess a letter: ").lower()
         if len(guess) != 1:
@@ -47,7 +59,7 @@ def get_guess(already_guessed) -> str:
             return guess
 
 
-def play_again() -> bool:
+def play_again():
     return input("\nDo you want to play again? ").lower().startswith("y")
 
 
@@ -55,7 +67,7 @@ if __name__ == "__main__":
 
     missed_letters = ""
     correct_letters = ""
-    secret_word = get_random_word()
+    secret_word = get_random()
     game_is_done = False
 
     while True:
@@ -82,9 +94,9 @@ if __name__ == "__main__":
                 print(
                     "You have run out of guesses!\nAfter "
                     + str(len(missed_letters))
-                    + " missed guesses and "
+                    + " missed guesses and :"
                     + str(len(correct_letters))
-                    + ' correct guesses, the word was "'
+                    + ' correct guesses, the word was: "'
                     + secret_word
                     + '"'
                 )
